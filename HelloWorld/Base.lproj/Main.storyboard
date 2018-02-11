@@ -46,6 +46,8 @@
         <!--View Controller-->
         <scene sceneID="x9J-Jj-JWi">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5S6-0B-rc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="bdh-tn-JCK" userLabel="Exit" sceneMemberID="exit"/>
                 <viewController id="7LX-eR-PH9" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dSS-5c-bI4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -55,11 +57,19 @@
                                 <rect key="frame" x="53" y="514" width="93" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Find a Doctor"/>
+                                <connections>
+                                    <segue destination="COY-NS-6jn" kind="show" id="EtY-gv-HB6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sis-0L-wfu">
                                 <rect key="frame" x="240" y="170" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="WebMD"/>
+                                <connections>
+                                    <action selector="WebMD:" destination="bdh-tn-JCK" eventType="touchUpInside" id="yJu-gf-CYv"/>
+                                    <action selector="web:" destination="bdh-tn-JCK" eventType="touchUpInside" id="OR9-ZL-J6W"/>
+                                    <action selector="webMD:" destination="bdh-tn-JCK" eventType="touchUpInside" id="L1K-fu-UIY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahr-4w-X4X">
                                 <rect key="frame" x="216" y="514" width="103" height="30"/>
@@ -86,9 +96,55 @@
                         <viewLayoutGuide key="safeArea" id="0YW-ty-RuF"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5S6-0B-rc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1111.2" y="132.68365817091455"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="c7n-IM-eFW">
+            <objects>
+                <viewController id="COY-NS-6jn" customClass="MapViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C2p-zn-fJX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLe-nJ-5gm">
+                                <rect key="frame" x="86" y="107" width="203" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="let">
+                                        <attributes>
+                                            <font key="NSFont" size="16.5" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" us help you find a clinic">
+                                        <attributes>
+                                            <font key="NSFont" size="16.5" name="HelveticaNeue"/>
+                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ch9-so-ddV">
+                                <rect key="frame" x="27" y="164" width="320" height="483"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="COY-NS-6jn" id="aNp-gd-NgW"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="S8G-Xn-kiD"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="ch9-so-ddV" id="HqK-lK-OZe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nnO-za-vKd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1840.8" y="132.68365817091455"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CoH-jp-QZA">

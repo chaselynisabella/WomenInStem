@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0684AFC4203002A0005597BC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0684AFC3203002A0005597BC /* MapViewController.swift */; };
+		0684AFCC20303BD2005597BC /* ViewArtwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0684AFCB20303BD2005597BC /* ViewArtwork.swift */; };
+		0684AFD0203047C1005597BC /* ViewWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0684AFCF203047C1005597BC /* ViewWeb.swift */; };
 		DA70250D202FC29C00ADB6E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70250C202FC29C00ADB6E7 /* AppDelegate.swift */; };
 		DA70250F202FC29C00ADB6E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA70250E202FC29C00ADB6E7 /* ViewController.swift */; };
 		DA702512202FC29C00ADB6E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA702510202FC29C00ADB6E7 /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0684AFC3203002A0005597BC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		0684AFCB20303BD2005597BC /* ViewArtwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewArtwork.swift; sourceTree = "<group>"; };
+		0684AFCF203047C1005597BC /* ViewWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewWeb.swift; sourceTree = "<group>"; };
 		DA702509202FC29C00ADB6E7 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA70250C202FC29C00ADB6E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA70250E202FC29C00ADB6E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +63,9 @@
 				DA70250C202FC29C00ADB6E7 /* AppDelegate.swift */,
 				DA70250E202FC29C00ADB6E7 /* ViewController.swift */,
 				DA702510202FC29C00ADB6E7 /* Main.storyboard */,
+				0684AFCF203047C1005597BC /* ViewWeb.swift */,
+				0684AFCB20303BD2005597BC /* ViewArtwork.swift */,
+				0684AFC3203002A0005597BC /* MapViewController.swift */,
 				DA702513202FC29C00ADB6E7 /* Assets.xcassets */,
 				DA702515202FC29C00ADB6E7 /* LaunchScreen.storyboard */,
 				DA702518202FC29C00ADB6E7 /* Info.plist */,
@@ -137,6 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA70250F202FC29C00ADB6E7 /* ViewController.swift in Sources */,
+				0684AFCC20303BD2005597BC /* ViewArtwork.swift in Sources */,
+				0684AFC4203002A0005597BC /* MapViewController.swift in Sources */,
+				0684AFD0203047C1005597BC /* ViewWeb.swift in Sources */,
 				DA70250D202FC29C00ADB6E7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
